@@ -1,0 +1,199 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\newtheorem{definicion}{Definición}
+\newtheorem{ejemplo}{Ejemplo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[Presentación con Beamer del nímero $\pi$]{Número $\pi$ }
+\author[Técnicas Experimentales]{Raquel Estefanía Espino Mantas}
+\date[23-04-2014]{23 de abril de 2014}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usetheme{Madrid}
+%\usetheme{Antibes}
+%\usetheme{tree}
+%\usetheme{classic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+  
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\begin{frame}
+
+  \includegraphics[width=0.15\textwidth]{img/ullesc}
+  \hspace*{7.0cm}
+  \includegraphics[width=0.16\textwidth]{img/fmatesc}
+  \titlepage
+
+  \begin{small}
+    \begin{center}
+     Facultad de Matemáticas \\
+     Universidad de La Laguna
+    \end{center}
+  \end{small}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\begin{frame}
+  \frametitle{Índice}
+  \tableofcontents[pausesections]
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+\section{Historia del número $\pi$}
+
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\begin{frame}
+
+\frametitle{Historia del número $\pi$}
+
+\begin{definicion}
+A lo largo de la historia han sido muchas las formas utilizadas por el
+ser humano para calcular aproximaciones cada vez más exactas del número $\pi$.
+%
+Es posible obtener una aproximación al valor de $\pi$ de forma geométrica.
+De hecho, ya los griegos intentaron obtener sin éxito una solución exacta al 
+problema del valor de $\pi$ mediante el empleo de regla y compás. 
+El problema griego conocido como cuadratura del círculo o, lo que es lo mismo,
+obtener un cuadrado de área igual al área de un círculo cualquiera, lleva implícito
+el cálculo del valor exacto de $\pi$.
+%
+Una vez demostrado que era imposible la obtención de $\pi$ mediante el uso de regla 
+y compás, se desarrollaron varios métodos aproximados. Dos de las soluciones son 
+las debidas a Kochanski (usando regla y compás) y la de Mascheroni (empleando únicamente un compás).\par
+
+\end{definicion}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+\section{Método de Kochanski}
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\begin{frame}
+
+\frametitle{Método de Kochanski}
+
+\begin{definicion}
+  \begin{itemize}
+  \item
+ Se dibuja una circunferencia de radio R. Se inscribe el triángulo equilátero OEG. Se
+ traza una recta paralela al segmento EG que pase por A, prolongándola hasta que corte al 
+ segmento OE, obteniendo D. Desde el punto D y sobre ese segmento se transporta 3 veces 
+ el radio de la circunferencia y se obtiene el punto C. El segmento BC es aproximadamente 
+ la mitad de la longitud de la circunferencia.
+  \end{itemize}
+\end{definicion}
+\end{frame} 
+\begin{frame}
+\begin{definicion}
+  \begin{itemize}
+  \item
+$$BC^2=AB^2+(3-DA)^2 \,\!
+OF= \frac{\sqrt{3}}{2}
+\frac{DA}{EF} = $$
+$$=\frac{OA}{OF} \rightarrow \frac{DA}{1/2}=$$
+$$=\frac{1}{\sqrt{3}/2} \rightarrow DA=\frac{\sqrt{3}}{3}$$
+ \pause
+ \item
+Sustituyendo en la primera fórmula:
+$$BC^2= 2^2+\left (3-\frac{\sqrt{3}}{3}\right )^2 \rightarrow$$
+$$BC = \sqrt{40-6 \sqrt{3} \over 3}=3,141533...$$
+
+  \end{itemize}
+\end{definicion}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+\section{Método de Mascheroni}
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\begin{frame}
+\frametitle{Método de Mascheroni}
+
+\begin{definicion}
+  \begin{itemize}
+  \item
+Método desarrollado por Lorenzo Mascheroni: se dibuja una circunferencia de radio R y
+se inscribe un hexágono regular. El punto D es la intersección de dos arcos de
+circunferencia: BD con centro en A', y CD con centro en A. Obtenemos el punto E como 
+intersección del arco DE, con centro en B, y la circunferencia. El segmento AE es 
+un cuarto de la longitud de la circunferencia, aproximadamente.
+  
+  \end{itemize}
+\end{definicion}
+\end{frame}
+\begin{frame}
+\begin{definicion}
+  \begin{itemize}
+  \item
+Demostración (suponiendo R = 1)
+$$AD=AC=\sqrt{3} OD=\sqrt{3-1}=\sqrt{2}$$
+$$BE=BD=\sqrt{(OD-MB)^2+MO^2} BE=BD=$$
+$$=\sqrt{\left( \sqrt{2}-\frac{\sqrt{3}}{2} \right)^2+\frac{1}{4}}=\sqrt{3-\sqrt{6}}$$\par
+  \pause
+  \item
+Por el teorema de Ptolomeo, en el cuadrilátero ABEB'
+$$BB' \cdot AE=AB \cdot EB' + BE \cdot AB'
+2 \cdot $$
+$$AE= \sqrt{1+\sqrt{6}}+\sqrt{9-3 \cdot \sqrt{6}}=3,142399...$$
+  
+  \end{itemize}
+\end{definicion}
+
+\end{frame}
+
+\section{Fórmula para calcular $\pi$}
+
+\begin{frame}
+\frametitle{Fórmula para calcular $\pi$}
+\begin{definicion}
+  \begin{itemize}
+  \item
+$\pi$ se puede calcular mediante integración:
+%
+$$\int_{0}^{1} \! \frac{4}{1+x^2}\, dx = 4(atan(1) -atan(0)) = \pi $$
+%
+Esta integral se puede aproximar numéricamente con una fórmula de cuadratura.
+El valor aproximado de PI es:  3.14680051839 
+El valor de PI con 35 decimales: 3.1415926535897931159979634685441852\par
+  \end{itemize}
+\end{definicion}
+\end{frame}
+%
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+\section{Bibliografía}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\begin{frame}
+  \frametitle{Bibliografía}
+
+  \begin{thebibliography}{10}
+
+    \beamertemplatebookbibitems
+    \bibitem[Plan Estudios, 2011]{plan}
+    Documento de verificación del grado.
+    (2011)
+
+    \beamertemplatebookbibitems
+    \bibitem[Guía Docente, 2013]{guia}
+    Guía docente.
+    (2013)
+    {\small $http://eguia.ull.es/matematicas/query.php?codigo=299341201$}
+
+    \beamertemplatebookbibitems
+    \bibitem[URL: CTAN]{latex}
+    CTAN. {\small $http://www.ctan.org/$}
+
+  \end{thebibliography}
+\end{frame}
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\end{document}

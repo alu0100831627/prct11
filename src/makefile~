@@ -1,0 +1,11 @@
+all:
+	latex beamerpi.tex
+	latex beamerpi.tex
+	bibtex beamerpi
+	latex beamerpi.tex
+	latex beamerpi.tex
+	dvips -o beamerpi.ps beamerpi.dvi
+	ps2pdf -sPAPERSIZE=a4 -DMaxSubsetPct=100 -dCompatibilityLevel=1.2 -dSubsetFonts=true -dEmbedAllFonts=true beamerpi.ps beamerpi.pdf
+
+clean:
+	rm -f *.toc *.ps *.log *.lof *.lot *.dvi *.aux *.blg *.bbl

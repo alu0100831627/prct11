@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {1}{Historia del n\IeC {\'u}mero $\pi $}{7}{0}{1}
+\beamer@sectionintoc {2}{M\IeC {\'e}todo de Kochanski}{8}{0}{2}
+\beamer@sectionintoc {3}{M\IeC {\'e}todo de Mascheroni}{11}{0}{3}
+\beamer@sectionintoc {4}{F\IeC {\'o}rmula para calcular $\pi $}{14}{0}{4}
+\beamer@sectionintoc {5}{Bibliograf\IeC {\'\i }a}{15}{0}{5}
